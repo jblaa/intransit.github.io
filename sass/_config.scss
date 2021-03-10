@@ -1,0 +1,29 @@
+$blue: #2a9fd6;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #c00;
+$orange: #fd7e14;
+$yellow: #f80;
+$green: #77b300;
+$teal: #20c997;
+$cyan: #93c;
+$white: #f3f5f6;
+$gray: #555;
+$gray-dark: #050505;
+$primary: #2a9fd6;
+$secondary: #555;
+$success: #77b300;
+$info: #93c;
+$warning: #f80;
+$danger: #c00;
+$light: #222;
+$dark: #adafae;
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// animation is slow so you can see it, but probably should be .25 or .15
+$thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;

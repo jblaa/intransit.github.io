@@ -1,0 +1,194 @@
+@import 'config';
+@import 'utility';
+
+//globals
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+        color:$white;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+      
+    body{
+    background:$gray-dark;
+        font-family: 'Anonymous Pro', monospace;
+        line-height:1.6;
+    }
+    #page_wrapper{
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+        background:url('../img/bkg.jpg') no-repeat center center / cover;
+        background-attachment: fixed;
+        overflow:hidden;
+    }
+
+//navbar
+    nav{
+        display:flex;
+        justify-content:space-between;
+    }
+    //icon area
+        #logo img{
+            height:auto;
+            width:4rem;
+            padding:1rem;
+        }
+    //display menu
+        .menu{
+            display:inline-flex;
+            right:0;
+            & li{
+                padding:0.5rem 1rem;
+            }
+        }
+
+//showcase
+    #showcase{
+        padding:0 2rem 4rem 2rem;
+        width:70%;
+        height:100%;
+        margin:8rem auto;
+        box-sizing:border-box;
+        display:grid;
+        gap:2rem;
+        grid-template-columns:1fr 3fr;
+        align-items:center;
+        & img{
+            width:400px;
+            height:auto;
+            border-radius:25% 25% 0 25%;
+            cursor:pointer;
+        }
+        &_text{
+            display:grid;
+            grid-template-columns:1fr;
+            grid-template-rows:1fr 4fr 1fr;
+            align-items:center;
+            overflow:hidden;
+        }
+        &_upper{
+            margin:0;
+            padding:0;
+            display: flex;
+            align-items: flex-end;
+        }
+        & h1{
+            font-size:8rem;
+            color:$indigo;
+        }
+        &_link_panel{
+            display:inline-block;
+            position:relative;
+            left:200%;
+        }
+        & a{
+            font-weight:bold;
+            padding-right:1rem;
+        }
+
+    }
+
+//services
+    #services{
+        box-sizing:border-box;
+        text-align:center;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        overflow:hidden;
+    }
+    .service_card{
+        background:$light;
+        opacity:67%;
+        margin:2rem;
+        padding:2rem;
+        box-sizing:border-box;
+        border-radius:1rem;
+        & h1{
+            font-size:3rem;
+            font-weight:bold;
+            padding-bottom:2rem;
+        }
+        &:hover{
+            opacity:100%;
+        }
+    }
+    .service_entry{
+        display:grid;
+        align-items:center;
+        grid-template-columns:1fr 1fr;
+        width:60%;
+        margin:auto;
+        padding:1rem;
+        &:hover{
+            background:$indigo;
+            transition:0.3s;
+        }
+    }
+    #front_end_card{
+        position:relative;
+        right:100%;
+    }
+    #back_end_card{
+        position:relative;
+        left:100%;
+    }
+
+//portfolio
+    #portfolio{
+        margin:2rem;
+        padding:2rem;
+        box-sizing:border-box;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr;
+        gap:2rem;
+        background:$light;
+        opacity:67%;
+        align-items:center;
+        border-radius:1rem;
+        position:relative;
+        left:100%;
+        overflow:hidden;
+        &:hover{
+            opacity:100%;
+            transition:0.3s;
+        }
+    }
+    .portfolio_card{
+        height:100%;
+        width:100%;
+        padding:2rem;
+        display:grid;
+        align-content:center;
+        background:$gray-dark;
+        border-radius:1rem;
+        & img{
+            width:100%;
+            filter:brightness(60%);
+        }
+    }
+    #arrow_array{
+        display:flex;
+    }
+
+
+//above 1200px (DESKTOP LARGE)
+@media(min-width:1200px) {
+    //
+}
+
+//below 800px (TABLET/ SMALL DESKTOP)
+@media(max-width:800px) {
+    //
+}
+
+//below 500px MOBILE
+@media(max-width:500px){
+    //
+}
+
