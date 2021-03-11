@@ -28,7 +28,6 @@
         <nav>
             <a id="logo" href="index.php"><img src="img\logo.png" alt=""></a>
             <ul class="menu">
-                <li><a href="index.php">[Reload Page]</a></li>
                 <li><a href="contact.php">[Contact Me]</a></li>
                 <li><a href="https://intransit.site" target="_blank">[My Personal Site]</a></li>
             </ul>

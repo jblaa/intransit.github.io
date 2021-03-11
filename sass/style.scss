@@ -44,6 +44,7 @@
             right:0;
             & li{
                 padding:0.5rem 1rem;
+                &:hover{animation: pulse-animation 2s infinite;}
             }
         }
 
@@ -89,6 +90,7 @@
         & a{
             font-weight:bold;
             padding-right:1rem;
+            &:hover{animation: pulse-animation 2s infinite;}
         }
 
     }
@@ -172,10 +174,50 @@
             filter:brightness(60%);
         }
     }
+    #portfolio_3 h1{
+        font-size:4rem;
+    }
     #arrow_array{
         display:flex;
     }
 
+    #contact{
+        margin:4rem 2rem;
+        padding:2rem;
+        box-sizing:border-box;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr;
+        gap:2rem;
+        background:$light;
+        opacity:67%;
+        align-items:center;
+        text-align:center;
+        border-radius:1rem;
+        position:relative;
+        right:100%;
+        overflow:hidden;
+        &:hover{
+            opacity:100%;
+            transition:0.3s;
+        }
+        &_left {
+            & i{
+                padding:0 1rem;
+            }
+            & h3{
+                padding:2rem;
+            }
+        }
+    }
+    .contact_area{
+        padding:2rem;
+        width:60%;
+        height:100%;
+        margin:auto;
+        background:$gray-dark;
+        border-radius:1rem;
+    }
 
 //above 1200px (DESKTOP LARGE)
 @media(min-width:1200px) {

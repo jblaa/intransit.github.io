@@ -84,19 +84,22 @@ function showcase(){
         //bring in the services cards 2/4s after click
         setTimeout(function() {
             document.getElementById("front_end_card").style['right'] = '0%';
-            //document.getElementById("back_end_card").style['left'] = '0%';
         }, 4000);
         setTimeout(function() {
-            //document.getElementById("front_end_card").style['right'] = '0%';
             document.getElementById("back_end_card").style['left'] = '0%';
         }, 6000);
         //bring in the portfolio cards
         document.getElementById("portfolio").style.transition = "all 0.5s"; //2 sec trans time
-        //bring in the portfolio cards 8s after click
+    //bring in the portfolio cards 8s after click
         setTimeout(function() {
             document.getElementById("portfolio").style['left'] = '0%';
-            //document.getElementById("back_end_card").style['left'] = '0%';
         }, 8000);
+    //bring in the contact card
+        document.getElementById("contact").style.transition = "all 0.5s"; //0.5 sec trans time
+        //bring in the contact card 10s after click
+        setTimeout(function() {
+            document.getElementById("contact").style['right'] = '0%';
+        }, 10000);
         //initiate typewriter 2s after image click
         setTimeout(function() {
             init();
@@ -107,6 +110,8 @@ function showcase(){
         document.getElementById("chev_1").style.transition = "all 0.5s"; //2 sec trans time
         document.getElementById("chev_2").style.transition = "all 0.5s"; //2 sec trans time
         document.getElementById("chev_3").style.transition = "all 0.5s"; //2 sec trans time
+        document.getElementById("chev_4").style.transition = "all 0.5s"; //2 sec trans time
+        document.getElementById("chev_5").style.transition = "all 0.5s"; //2 sec trans time
         setInterval(function(){ 
             switch (chevCount) {
                 case 0:
@@ -114,6 +119,8 @@ function showcase(){
                     document.getElementById("chev_1").style['opacity'] = '0';
                     document.getElementById("chev_2").style['opacity'] = '0';
                     document.getElementById("chev_3").style['opacity'] = '0';
+                    document.getElementById("chev_4").style['opacity'] = '0';
+                    document.getElementById("chev_5").style['opacity'] = '0';
                     chevCount = 1;
                     break;
                 case 1:
@@ -121,6 +128,8 @@ function showcase(){
                     document.getElementById("chev_1").style['opacity'] = '1';
                     document.getElementById("chev_2").style['opacity'] = '0';
                     document.getElementById("chev_3").style['opacity'] = '0';
+                    document.getElementById("chev_4").style['opacity'] = '0';
+                    document.getElementById("chev_5").style['opacity'] = '0';
                     chevCount = 2;
                     break;
                 case 2:
@@ -128,6 +137,8 @@ function showcase(){
                     document.getElementById("chev_1").style['opacity'] = '0';
                     document.getElementById("chev_2").style['opacity'] = '1';
                     document.getElementById("chev_3").style['opacity'] = '0';
+                    document.getElementById("chev_4").style['opacity'] = '0';
+                    document.getElementById("chev_5").style['opacity'] = '0';
                     chevCount = 3;
                     break;
                 case 3:
@@ -135,6 +146,26 @@ function showcase(){
                     document.getElementById("chev_1").style['opacity'] = '0';
                     document.getElementById("chev_2").style['opacity'] = '0';
                     document.getElementById("chev_3").style['opacity'] = '1';
+                    document.getElementById("chev_4").style['opacity'] = '0';
+                    document.getElementById("chev_5").style['opacity'] = '0';
+                    chevCount = 4;
+                    break;
+                case 4:
+                    document.getElementById("chev_0").style['opacity'] = '0';
+                    document.getElementById("chev_1").style['opacity'] = '0';
+                    document.getElementById("chev_2").style['opacity'] = '0';
+                    document.getElementById("chev_3").style['opacity'] = '0';
+                    document.getElementById("chev_4").style['opacity'] = '1';
+                    document.getElementById("chev_5").style['opacity'] = '0';
+                    chevCount = 5;
+                    break;
+                case 5:
+                    document.getElementById("chev_0").style['opacity'] = '0';
+                    document.getElementById("chev_1").style['opacity'] = '0';
+                    document.getElementById("chev_2").style['opacity'] = '0';
+                    document.getElementById("chev_3").style['opacity'] = '0';
+                    document.getElementById("chev_4").style['opacity'] = '0';
+                    document.getElementById("chev_5").style['opacity'] = '1';
                     chevCount = 0;
                     break;
                 default:

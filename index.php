@@ -82,12 +82,14 @@
     <!--recent work-->
         <div id="portfolio">
             <div class="portfolio_card" id="portfolio_3">
-                <h1>Recent Dev Work</h1>
+                <h1>Recent</h1><h1>Projects</h1>
                 <div id="arrow_array">
                     <h1 id="chev_0">></h1>
                     <h1 id="chev_1">></h1>
                     <h1 id="chev_2">></h1>
                     <h1 id="chev_3">></h1>
+                    <h1 id="chev_4">></h1>
+                    <h1 id="chev_5">></h1>
                 </div>
             </div>
             <div class="portfolio_card" id="portfolio_2">
@@ -115,14 +117,34 @@
                 </a>
             </div>
         </div>
-    <!--companies I've worked with-->
-        <div id="customers">
-        
+    <!--contact me-->
+        <div id="contact">
+            <div id="contact_left" class="contact_area">
+                <h1>Find Me On The Internet</h1>
+                <h3>Have you got cool idea that you want to see brought to life? Do you want to partner with a flexible new developer that will do it pretty cheap as he builds up his portfolio? Contact me via the below social links or the contact form and I'll get back to you ASAP. </h3>
+                <div id="social_block">
+                    <a href="https://gist.github.com/jblaa" target="_blank"><i style="color:#f34f29;" class="social_icon fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/jovaniezayas/" target="_blank"><i style="color:#0e76a8;" class="social_icon fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.instagram.com/jay.dont.gram/" target="_blank"><i style="color:#fb3958;" class="social_icon fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.intransit.site/" target="_blank"><i style="color:#00749c;" class="social_icon fab fa-wordpress fa-2x"></i></a>
+                </div>
+            </div>
+            <div id="contact_right" class="contact_area">
+                <h1>Email Me Directly</h1><br>
+                <form action="">
+                    <label for="name">Your Name</label><br>
+                    <input type="text" name="lname" value="" required><br><br>
+                    <label for="email">Your Email Address**</label><br>
+                    <input type="email" name="email" value="" required><br>
+                    <small>**I won't SPAM you or sell your email address</small><br><br>
+                    <label for="message">Your Message</label><br>
+                    <textarea name="message" required></textarea><br>
+                    <input class="btn" type="submit" name="submit" value="Message Me">
+                </form>
+            </div>
         </div>
-
-
-
-
+    <!--testimonials-->
+    <!--companies I've worked with-->
 
 <!--footer require-->    
 <?php require('inc/footer.php'); ?> 

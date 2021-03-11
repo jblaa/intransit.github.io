@@ -11,27 +11,22 @@
         position:absolute;
     }
 
-//underline on hover
-    .ul_on_hover{
-        &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            bottom: 0;
-            left: 0;
-            background-color: $primary;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: $thetransition;
-            transition: $thetransition;
-            }
-        &:hover:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
+//button styling
+.btn {
+    padding:0.5rem 2rem;
+    margin:1rem;
+    font-size:1rem;
+    font-weight:bold;
+    box-sizing:border-box;
+    background:$primary;
+    border:1px $primary solid;
+    border-radius:5px;
+    cursor:pointer;
+    &:hover{
+        background:$dark;
+        transition:0.2s;
+        animation: pulse-animation 2s infinite;
+    }
 }
 
 //link styling
@@ -47,6 +42,23 @@
 //headline styling
     h1{
         color:$primary;
+    }
+
+//form styling
+    input, textarea{
+        background:none;
+        box-shadow:none;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        border-bottom:1px $white solid;
+        padding:0.5rem;
+        width:80%;
+        font-size:1.2rem;
+    }
+    label{
+        padding:0.5rem;
     }
 
 //hide element
