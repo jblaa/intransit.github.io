@@ -84,6 +84,20 @@
         }
     }
 
+    .image_pulse{
+        animation: image-pulse-animation 2s infinite;
+    }
+    @keyframes image-pulse-animation {
+        0% {
+            box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+            transform:scale(1);
+        }
+        100% {
+            transform:scale(1.02);
+            box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+        }
+    }
+
 /* Typewriter Cursor */
     .txt-type > .txt {
         border-right: 0.2rem solid $white;

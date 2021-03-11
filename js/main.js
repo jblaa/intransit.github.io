@@ -64,11 +64,15 @@ function init() {
 
 //showcase() runs animation in the showcase section on button click
 function showcase(){
+    //change body height to 100%
+    
+    document.getElementById("page_wrapper").style['height'] = '100%';
     //check to see if showcase image has pulse
     var state = document.getElementById("showcase_img");
-    if (state.classList.contains('pulse')) {
+    if (state.classList.contains('image_pulse')) {
         //and if so, remove it
-        state.classList.remove('pulse');
+        state.classList.remove('image_pulse');
+        document.getElementById("showcase_img").style['cursor'] = 'default';
         //get the logo to pulse
         document.getElementById('logo').classList.add('pulse');
         //change to color

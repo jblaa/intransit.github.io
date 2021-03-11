@@ -26,7 +26,7 @@
     <div id="page_wrapper">
     <!--nav bar-->
         <nav>
-            <a id="logo" href="index.php"><img src="img\logo.png" alt=""></a>
+            <a id="logo" href="index.php"><i style="color:#2a9fd6;" class="fas fa-history fa-2x"></i></i></a>
             <ul class="menu">
                 <li><a href="contact.php">[Contact Me]</a></li>
                 <li><a href="https://intransit.site" target="_blank">[My Personal Site]</a></li>

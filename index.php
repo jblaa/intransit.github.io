@@ -6,7 +6,7 @@
 <!--main page content -->
     <!--showcase-->
         <div id="showcase">
-            <img src="img\showcase-color.jpg" alt="" class="pulse" onclick="showcase()" id="showcase_img">
+            <img src="img\showcase-color.jpg" alt="" class="image_pulse" onclick="showcase()" id="showcase_img">
             <div id="showcase_text">
                 <!--showcase typetext-->
                 <div id="showcase_upper">
