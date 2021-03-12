@@ -245,94 +245,101 @@
     }
 }
 
-//above 1730 XL
-//above 1400px (DESKTOP LARGE)
-@media(max-width:1730px) {
-    & #showcase {
+@media(max-width:1750px) {
+    #showcase{
         width:90%;
         margin:auto;
     }
 }
-//above 1220px (DESKTOP)
-@media(max-width:1400px) {
-    & #showcase {
+@media(max-width:1350px) {
+    #showcase{
         width:100%;
     }
-}
-
-//above 1040 (Tablet LARGE)
-@media(max-width:1220px) {
-    & #showcase {
-        width:100%;
-        & h1{
-            font-size:6rem;
-        }
-        & h2{
-            font-size:1rem;
-        }
+    #contact_container{
+        width:80%;
     }
 }
-
-//above 780 (Tablet small / mobile)
-@media(max-width:1040px) {
-    & #showcase {
-        grid-template-columns:1fr;
-        gap:1rem;
-        align-items: center;
-        width:100%;
+@media(max-width:1200px) {
+    #showcase{
+        margin:2rem auto;
+        display:block;
         &_text{
-            margin:8rem 0 0 0;
-            box-sizing: border-box;
+            display:grid;
+            & h1{
+                font-size:6rem;
+                margin:0;
+            }
+            & h2{
+                font-size:1.2rem;
+            }
+        }
+    }
+}
+@media(max-width:640px) {
+    #showcase{
+        &_text{
+            display:grid;
+            overflow:visible;
             grid-template-rows:1fr 1fr 1fr;
+            & h1{
+                font-size:3rem;
+            }
+            & h2{
+                font-size:1rem;
+            }
         }
-        & h1{
-            font-size:6rem;
-        }
-        & h2{
-            font-size:1rem;
+        &_link_panel{
+            display:grid;
         }
         & img{
-            padding:2rem 0 0 0;
             width:300px;
+        }
+    }
+    #portfolio{
+        opacity:80%;
+        margin:0.5rem;
+        padding:0.5rem;
+        gap:0.5rem;
+        & img{
+            width:250px;
+        }
+        & h1{
+            font-size:1.6rem;
+        }
+
+    }
+    #contact{
+        opacity:80%;
+        margin:0.5rem;
+        padding:0.5rem;
+        &_left{
+            padding:0.5rem;
         }
     }
     #contact_container{
         width:100%;
+        padding:0;
+    }
+    .menu li{
+        padding:0 0.5rem;
     }
 }
 
-//below 800px (TABLET/ SMALL DESKTOP)
-@media(max-width:780px) {
-    & #showcase h1{
-        margin:0;
-        font-size:4rem;
-    }
-    & #showcase h2{
-        font-size:1rem;
-    }
-    & #showcase_link_panel{
-        display:grid;
-        grid-template-columns:1fr;
-    }
-}
 
 //scrollbar style
-/* width */
-::-webkit-scrollbar {
-    width: 1rem;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: $gray-dark; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $primary; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $secondary; 
-  }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 1rem;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $gray-dark; 
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $primary; 
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: $secondary; 
+    }

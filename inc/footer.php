@@ -5,7 +5,7 @@
                     <a href="#logo"><i style="color:#2a9fd6;" class="far fa-caret-square-up fa-2x"></i></a>
                 </div>
                 <div id="copy_block">
-                    <p>&copy; 2021 IN_TRANSIT - v0.1</p>
+                    <p>&copy; 2021 IN_TRANSIT<br>v0.1</p>
                 </div>
                 <div id="social_footer">
                         <a href="https://gist.github.com/jblaa" target="_blank"><i style="color:#f34f29;" class="social_icon fab fa-github fa-1x"></i></a>
