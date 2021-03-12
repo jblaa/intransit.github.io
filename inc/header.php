@@ -1,5 +1,6 @@
 <?php
-    require('inc/config.php');
+    #GLOBAL VARIABLES
+
     session_start(); //start the session
 
     #CHECK CURRENT PAGE 
@@ -23,11 +24,11 @@
         <!--<link rel="stylesheet" href="css\modal.css">-->
 
 </head>
-<body class="bandw" id="body">
-    <div id="page_wrapper">
+<body class="<?php if ($this_page == 'Freelance') {echo 'bandw';}; ?>" id="body">
+    <div <?php if ($page_type == 'landing') {echo 'id="page_wrapper_l"';} else {echo 'id="page_wrapper"';};?>>
     <!--nav bar-->
         <nav>
-            <a id="logo" href="index.php"><i style="color:#2a9fd6;" class="fas fa-history fa-2x"></i></i></a>
+            <a id="logo" href="index.php"><i style="color:#2a9fd6;" class="fas fa-<?php if ($this_page == 'Freelance') {echo 'history';} else {echo 'home';}; ?> fa-2x"></i></i><?php //if ($page_type != 'landing') {echo ' [freelance.intransit.site]';};?></a>
             <ul class="menu">
                 <li><a href="https://intransit.site/contact/" target="_blank">[Contact Me]</a></li>
                 <li><a href="https://intransit.site" target="_blank">[My Personal Site]</a></li>

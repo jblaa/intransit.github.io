@@ -1,0 +1,71 @@
+//EVERYTHING MUST BE INSIDE THIS WRAPPER!!
+.portfolio_page_wrapper{
+    width:80%;
+    height:100%;
+    margin:auto;
+    .portfolio_title_block{
+        margin:8rem 0 4rem 0;
+    }
+    h1{
+        font-size:4rem;
+        color:$red;
+    }
+    h2{
+        font-size:2rem;
+        color:$red;
+        padding-bottom:1rem;
+    }
+    p{
+        font-size:1.1rem;
+    }
+    ul{
+        list-style-type:initial;
+        position:static;
+        padding-left:1.5rem;
+    }
+    .portfolio_image_block{
+        width:80%;
+        margin:auto;
+        & img{
+            width:100%;
+            height:auto;
+        }
+
+    }
+    .portfolio_description_block, .portfolio_technical_sheet, .portfolio_resources,
+    .portfolio_contact{
+        border-left:1px $white solid;
+        background:$gray-dark;
+        padding:2rem;
+        opacity:75%;
+        margin:2rem 0;
+        .portfolio_input{
+            display:grid;
+            grid-template-columns:1fr;
+            grid-template-rows:1fr 1fr;
+            width:80%;
+            padding:1rem 0;
+        }
+        .portfolio_msg_input{
+            padding:1rem 0;
+            width:80%;
+        }
+        .portfolio_form_submit{
+            & input{
+                width:auto;
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .portfolio_page_wrapper{
+        width:100%;
+        & h1{
+            font-size:3rem;
+        }
+        .portfolio_description_block, .portfolio_technical_sheet, .portfolio_resources,
+        .portfolio_contact{
+            padding:1rem;
+        }
+    }
+}

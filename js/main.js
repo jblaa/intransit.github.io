@@ -66,7 +66,7 @@ function init() {
 function showcase(){
     //change body height to 100%
     
-    document.getElementById("page_wrapper").style['height'] = '100%';
+    document.getElementById("page_wrapper_l").style['height'] = '100%';
     //check to see if showcase image has pulse
     var state = document.getElementById("showcase_img");
     if (state.classList.contains('image_pulse')) {

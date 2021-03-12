@@ -1,5 +1,6 @@
 <?php 
     $this_page = 'Freelance';
+    $page_type = 'landing';
     require('inc/header.php');
 ?>
 
@@ -109,7 +110,7 @@
                 </a>
             </div>
             <div class="portfolio_card" id="portfolio_0">
-                <a href="https://intransit.site/portfolio_page/009-in_transit/" target="_blank">
+                <a href="001-in_transit.php">
                     <img src="img\portfolio_0.png" alt="">
                     <p>29 December 2020</p>
                     <h1>IN_TRANSIT</h1>

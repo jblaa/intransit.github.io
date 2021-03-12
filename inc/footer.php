@@ -14,7 +14,7 @@
                         <a href="https://www.intransit.site/" target="_blank"><i style="color:#00749c;" class="social_icon fab fa-wordpress fa-1x"></i></a>
                     </div>
             </div>
-</div>
+        </div>
     <!--end page wrapper-->
     </div>
       <!-- Modal content

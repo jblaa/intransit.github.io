@@ -1,5 +1,6 @@
 @import 'config';
 @import 'utility';
+@import 'portfolio';
 
 //globals
     *{
@@ -17,6 +18,14 @@
         line-height:1.6;
     }
     #page_wrapper{
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+        background:url('../img/bkg.jpg') no-repeat center center / cover;
+        background-attachment: fixed;
+    }
+    #page_wrapper_l{
         margin:0;
         padding:0;
         height:101vh;
