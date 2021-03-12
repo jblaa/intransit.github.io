@@ -18,8 +18,9 @@
     <!--fontawesome for icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" crossorigin="anonymous">
 
-    <!-- local stylesheet -->
+    <!-- local stylesheets -->
         <link rel="stylesheet" href="css\style.min.css">
+        <!--<link rel="stylesheet" href="css\modal.css">-->
 
 </head>
 <body class="bandw" id="body">
@@ -28,7 +29,7 @@
         <nav>
             <a id="logo" href="index.php"><i style="color:#2a9fd6;" class="fas fa-history fa-2x"></i></i></a>
             <ul class="menu">
-                <li><a href="contact.php">[Contact Me]</a></li>
+                <li><a href="https://intransit.site/contact/" target="_blank">[Contact Me]</a></li>
                 <li><a href="https://intransit.site" target="_blank">[My Personal Site]</a></li>
             </ul>
         </nav>

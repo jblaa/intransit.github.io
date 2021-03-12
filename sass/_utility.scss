@@ -12,22 +12,22 @@
     }
 
 //button styling
-.btn {
-    padding:0.5rem 2rem;
-    margin:1rem;
-    font-size:1rem;
-    font-weight:bold;
-    box-sizing:border-box;
-    background:$primary;
-    border:1px $primary solid;
-    border-radius:5px;
-    cursor:pointer;
-    &:hover{
-        background:$dark;
-        transition:0.2s;
-        animation: pulse-animation 2s infinite;
+    .btn {
+        padding:0.5rem 2rem;
+        margin:1rem;
+        font-size:1rem;
+        font-weight:bold;
+        box-sizing:border-box;
+        background:$primary;
+        border:1px $primary solid;
+        border-radius:5px;
+        cursor:pointer;
+        &:hover{
+            background:$dark;
+            transition:0.2s;
+            animation: pulse-animation 2s infinite;
+        }
     }
-}
 
 //link styling
     a{

@@ -83,27 +83,28 @@ function showcase(){
         document.getElementById("showcase_link_panel").style['left'] = '0%';
         //show services
         //service card transition time = 2s
-        document.getElementById("front_end_card").style.transition = "all 0.5s"; //2 sec trans time
-        document.getElementById("back_end_card").style.transition = "all 0.5s"; //2 sec trans time
+            //document.getElementById("front_end_card").style.transition = "all 0.5s"; //2 sec trans time
+            //document.getElementById("back_end_card").style.transition = "all 0.5s"; //2 sec trans time
         //bring in the services cards 2/4s after click
         setTimeout(function() {
-            document.getElementById("front_end_card").style['right'] = '0%';
+            //document.getElementById("front_end_card").style['right'] = '0%';
         }, 4000);
         setTimeout(function() {
-            document.getElementById("back_end_card").style['left'] = '0%';
+            //document.getElementById("back_end_card").style['left'] = '0%';
         }, 6000);
         //bring in the portfolio cards
         document.getElementById("portfolio").style.transition = "all 0.5s"; //2 sec trans time
     //bring in the portfolio cards 8s after click
         setTimeout(function() {
             document.getElementById("portfolio").style['left'] = '0%';
-        }, 8000);
+            document.getElementById("portfolio").style['overflow-x'] = 'scroll';
+        }, 3000);
     //bring in the contact card
         document.getElementById("contact").style.transition = "all 0.5s"; //0.5 sec trans time
         //bring in the contact card 10s after click
         setTimeout(function() {
             document.getElementById("contact").style['right'] = '0%';
-        }, 10000);
+        }, 5000);
         //initiate typewriter 2s after image click
         setTimeout(function() {
             init();
@@ -120,55 +121,55 @@ function showcase(){
             switch (chevCount) {
                 case 0:
                     document.getElementById("chev_0").style['opacity'] = '1';
-                    document.getElementById("chev_1").style['opacity'] = '0';
-                    document.getElementById("chev_2").style['opacity'] = '0';
-                    document.getElementById("chev_3").style['opacity'] = '0';
-                    document.getElementById("chev_4").style['opacity'] = '0';
-                    document.getElementById("chev_5").style['opacity'] = '0';
+                    document.getElementById("chev_1").style['opacity'] = '0.2';
+                    document.getElementById("chev_2").style['opacity'] = '0.2';
+                    document.getElementById("chev_3").style['opacity'] = '0.2';
+                    document.getElementById("chev_4").style['opacity'] = '0.2';
+                    document.getElementById("chev_5").style['opacity'] = '0.2';
                     chevCount = 1;
                     break;
                 case 1:
-                    document.getElementById("chev_0").style['opacity'] = '0';
+                    document.getElementById("chev_0").style['opacity'] = '0.2';
                     document.getElementById("chev_1").style['opacity'] = '1';
-                    document.getElementById("chev_2").style['opacity'] = '0';
-                    document.getElementById("chev_3").style['opacity'] = '0';
-                    document.getElementById("chev_4").style['opacity'] = '0';
-                    document.getElementById("chev_5").style['opacity'] = '0';
+                    document.getElementById("chev_2").style['opacity'] = '0.2';
+                    document.getElementById("chev_3").style['opacity'] = '0.2';
+                    document.getElementById("chev_4").style['opacity'] = '0.2';
+                    document.getElementById("chev_5").style['opacity'] = '0.2';
                     chevCount = 2;
                     break;
                 case 2:
-                    document.getElementById("chev_0").style['opacity'] = '0';
-                    document.getElementById("chev_1").style['opacity'] = '0';
+                    document.getElementById("chev_0").style['opacity'] = '0.2';
+                    document.getElementById("chev_1").style['opacity'] = '0.2';
                     document.getElementById("chev_2").style['opacity'] = '1';
-                    document.getElementById("chev_3").style['opacity'] = '0';
-                    document.getElementById("chev_4").style['opacity'] = '0';
-                    document.getElementById("chev_5").style['opacity'] = '0';
+                    document.getElementById("chev_3").style['opacity'] = '0.2';
+                    document.getElementById("chev_4").style['opacity'] = '0.2';
+                    document.getElementById("chev_5").style['opacity'] = '0.2';
                     chevCount = 3;
                     break;
                 case 3:
-                    document.getElementById("chev_0").style['opacity'] = '0';
-                    document.getElementById("chev_1").style['opacity'] = '0';
-                    document.getElementById("chev_2").style['opacity'] = '0';
+                    document.getElementById("chev_0").style['opacity'] = '0.2';
+                    document.getElementById("chev_1").style['opacity'] = '0.2';
+                    document.getElementById("chev_2").style['opacity'] = '0.2';
                     document.getElementById("chev_3").style['opacity'] = '1';
-                    document.getElementById("chev_4").style['opacity'] = '0';
-                    document.getElementById("chev_5").style['opacity'] = '0';
+                    document.getElementById("chev_4").style['opacity'] = '0.2';
+                    document.getElementById("chev_5").style['opacity'] = '0.2';
                     chevCount = 4;
                     break;
                 case 4:
-                    document.getElementById("chev_0").style['opacity'] = '0';
-                    document.getElementById("chev_1").style['opacity'] = '0';
-                    document.getElementById("chev_2").style['opacity'] = '0';
-                    document.getElementById("chev_3").style['opacity'] = '0';
+                    document.getElementById("chev_0").style['opacity'] = '0.2';
+                    document.getElementById("chev_1").style['opacity'] = '0.2';
+                    document.getElementById("chev_2").style['opacity'] = '0.2';
+                    document.getElementById("chev_3").style['opacity'] = '0.2';
                     document.getElementById("chev_4").style['opacity'] = '1';
-                    document.getElementById("chev_5").style['opacity'] = '0';
+                    document.getElementById("chev_5").style['opacity'] = '0.2';
                     chevCount = 5;
                     break;
                 case 5:
-                    document.getElementById("chev_0").style['opacity'] = '0';
-                    document.getElementById("chev_1").style['opacity'] = '0';
-                    document.getElementById("chev_2").style['opacity'] = '0';
-                    document.getElementById("chev_3").style['opacity'] = '0';
-                    document.getElementById("chev_4").style['opacity'] = '0';
+                    document.getElementById("chev_0").style['opacity'] = '0.2';
+                    document.getElementById("chev_1").style['opacity'] = '0.2';
+                    document.getElementById("chev_2").style['opacity'] = '0.2';
+                    document.getElementById("chev_3").style['opacity'] = '0.2';
+                    document.getElementById("chev_4").style['opacity'] = '0.2';
                     document.getElementById("chev_5").style['opacity'] = '1';
                     chevCount = 0;
                     break;
@@ -178,4 +179,33 @@ function showcase(){
         }, 1000);
     }
 }
+
+// modal
+// Get the modal
+/*
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+*/
     

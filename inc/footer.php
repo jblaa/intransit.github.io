@@ -5,7 +5,7 @@
                     <a href="#logo"><i style="color:#2a9fd6;" class="far fa-caret-square-up fa-2x"></i></a>
                 </div>
                 <div id="copy_block">
-                    <p>&copy; 2021 IN_TRANSIT</p>
+                    <p>&copy; 2021 IN_TRANSIT - v0.1</p>
                 </div>
                 <div id="social_footer">
                         <a href="https://gist.github.com/jblaa" target="_blank"><i style="color:#f34f29;" class="social_icon fab fa-github fa-1x"></i></a>
@@ -17,6 +17,22 @@
 </div>
     <!--end page wrapper-->
     </div>
+      <!-- Modal content
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+        </div>-->
 <!--scripts-->
     <script type="text/javascript" src="js\main.js"></script>
 </body>

@@ -23,16 +23,16 @@
                 </div>
                 <!--showcase links-->
                 <div id="showcase_link_panel">
-                        <a href="#services">[My Services]</a>
+                        <!--<a href="#services">[My Services]</a>-->
                         <a href="#portfolio">[My Portfolio]</a>
-                        <a href="#contact">[Contact Me]</a>
+                        <a href="#contact">[Social Media]</a>
                         <a href="https://intransit.site" target="_blank">[My Personal Site]</a>
                 </div>
             </div>
         </div>
     <!--services-->
-        <div id="services">
-            <div id="front_end_card" class="service_card">
+        <div id="services" class="hide">
+            <div id="front_end_card" class="service_card hide">
                 <h1>Front End</h1>
                 <div class="service_entry">
                     <i class="fab fa-html5 fa-3x"></i>
@@ -55,7 +55,7 @@
                     <h3>Mobile Layouts and Responsiveness</h3>
                 </div>
             </div>
-            <div id="back_end_card" class="service_card">
+            <div id="back_end_card" class="service_card hide">
                 <h1>Back End</h1>
                 <div class="service_entry">
                 <i class="fab fa-php fa-3x"></i>
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-    <!--recent work-->
+    <!--portfolio-->
         <div id="portfolio">
             <div class="portfolio_card" id="portfolio_3">
                 <h1>Recent</h1><h1>Projects</h1>
@@ -113,35 +113,37 @@
                     <img src="img\portfolio_0.png" alt="">
                     <p>29 December 2020</p>
                     <h1>IN_TRANSIT</h1>
-                    <p>Personal writing and project porftolio.</p>
+                    <p>Personal writing / project porftolio.</p>
                 </a>
             </div>
         </div>
     <!--contact me-->
         <div id="contact">
             <div id="contact_left" class="contact_area">
-                <h1>Find Me On The Internet</h1>
-                <h3>Have you got cool idea that you want to see brought to life? Do you want to partner with a flexible new developer that will do it pretty cheap as he builds up his portfolio? Contact me via the below social links or the contact form and I'll get back to you ASAP. </h3>
-                <div id="social_block">
-                    <a href="https://gist.github.com/jblaa" target="_blank"><i style="color:#f34f29;" class="social_icon fab fa-github fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/jovaniezayas/" target="_blank"><i style="color:#0e76a8;" class="social_icon fab fa-linkedin fa-2x"></i></a>
-                    <a href="https://www.instagram.com/jay.dont.gram/" target="_blank"><i style="color:#fb3958;" class="social_icon fab fa-instagram fa-2x"></i></a>
-                    <a href="https://www.intransit.site/" target="_blank"><i style="color:#00749c;" class="social_icon fab fa-wordpress fa-2x"></i></a>
+                <div id="contact_container">
+                    <h1>Find Me On The Internet</h1>
+                    <h3>Have you got cool idea that you want to see brought to life? Do you want to partner with a flexible new developer that will do it pretty cheap as he builds up his portfolio? Contact me via the below social links or the <a href="contact.php">[contact page]</a> on my personal site and I'll get back to you ASAP.</h3>
+                    <div id="social_block">
+                        <a href="https://gist.github.com/jblaa" target="_blank"><i style="color:#f34f29;" class="social_icon fab fa-github fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/jovaniezayas/" target="_blank"><i style="color:#0e76a8;" class="social_icon fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://www.instagram.com/jay.dont.gram/" target="_blank"><i style="color:#fb3958;" class="social_icon fab fa-instagram fa-2x"></i></a>
+                        <a href="https://www.intransit.site/" target="_blank"><i style="color:#00749c;" class="social_icon fab fa-wordpress fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
-            <div id="contact_right" class="contact_area">
+            <!--<div id="contact_right" class="contact_area">
                 <h1>Email Me Directly</h1><br>
-                <form action="">
+                <form method="post" action="none" target="_blank">
                     <label for="name">Your Name</label><br>
-                    <input type="text" name="lname" value="" required><br><br>
+                    <input type="text" name="lname" class="no-outline" required><br><br>
                     <label for="email">Your Email Address**</label><br>
-                    <input type="email" name="email" value="" required><br>
+                    <input type="email" name="email" class="no-outline" required><br>
                     <small>**I won't SPAM you or sell your email address</small><br><br>
                     <label for="message">Your Message</label><br>
                     <textarea name="message" required></textarea><br>
-                    <input class="btn" type="submit" name="submit" value="Message Me">
+                    <input id="myBtn" class="btn myModal" type="submit" name="submit" value="Message Me">
                 </form>
-            </div>
+            </div>-->
         </div>
     <!--testimonials-->
     <!--companies I've worked with-->
