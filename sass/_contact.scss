@@ -1,0 +1,72 @@
+//EVERYTHING MUST BE INSIDE THIS WRAPPER!!
+.contact_page_wrapper{
+    width:80%;
+    height:100%;
+    margin:auto;
+    .contact_title_block{
+        margin:8rem 0;
+    }
+    h1{
+        font-size:4rem;
+        color:$indigo;
+    }
+    h2{
+        font-size:2rem;
+        color:$indigo;
+        padding-bottom:1rem;
+    }
+    p{
+        font-size:1.1rem;
+    }
+    ul{
+        list-style-type:initial;
+        position:static;
+        padding-left:1.5rem;
+    }
+}
+    .contact_area, .contact_social, .contact_form{
+        border-left:1px $white solid;
+        background:$gray-dark;
+        padding:2rem;
+        opacity:75%;
+        margin:2rem 0;
+        &_block{
+            padding:2rem 1rem;
+            display:grid;
+            grid-template-columns:1fr;
+            gap:1rem;
+            align-items:center;
+        }
+        .contact_input{
+            display:grid;
+            grid-template-columns:1fr;
+            grid-template-rows:1fr 1fr;
+            width:80%;
+            padding:1rem 0;
+        }
+        .contact_msg_input{
+            padding:1rem 0;
+            width:80%;
+        }
+        .contact_form_submit{
+            & input{
+                width:auto;
+            }
+        }
+    }
+
+@media (max-width:1200px) {
+    //
+}
+
+@media (max-width:768px) {
+    .contact_page_wrapper{
+        width:100%;
+        & h1{
+            font-size:3rem;
+        }
+        .contact_area{
+            padding:1rem;
+        }
+    }
+}

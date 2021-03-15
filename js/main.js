@@ -86,12 +86,6 @@ function showcase(){
             //document.getElementById("front_end_card").style.transition = "all 0.5s"; //2 sec trans time
             //document.getElementById("back_end_card").style.transition = "all 0.5s"; //2 sec trans time
         //bring in the services cards 2/4s after click
-        setTimeout(function() {
-            //document.getElementById("front_end_card").style['right'] = '0%';
-        }, 4000);
-        setTimeout(function() {
-            //document.getElementById("back_end_card").style['left'] = '0%';
-        }, 6000);
         //bring in the portfolio cards
         document.getElementById("portfolio").style.transition = "all 0.5s"; //2 sec trans time
     //bring in the portfolio cards 8s after click
@@ -179,6 +173,18 @@ function showcase(){
         }, 1000);
     }
 }
+
+function playBkg(id){
+    var imageURL = 'img/preview_'+ id +'.gif';
+    console.log(imageURL);
+    document.getElementById('image_'+ id).src = imageURL;
+}
+function stopBkg(id){
+    var imageURL = 'img/preview_'+ id +'.png';
+    console.log(imageURL);
+    document.getElementById('image_'+ id).src = imageURL;
+}
+
 
 // modal
 // Get the modal

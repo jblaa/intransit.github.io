@@ -4,15 +4,15 @@
     height:100%;
     margin:auto;
     .portfolio_title_block{
-        margin:8rem 0 4rem 0;
+        margin:8rem 0;
     }
     h1{
         font-size:4rem;
-        color:$red;
+        color:$indigo;
     }
     h2{
         font-size:2rem;
-        color:$red;
+        color:$indigo;
         padding-bottom:1rem;
     }
     p{
@@ -30,7 +30,12 @@
             width:100%;
             height:auto;
         }
-
+    .portfolio_under_image{
+        opacity:80%;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
     }
     .portfolio_description_block, .portfolio_technical_sheet, .portfolio_resources,
     .portfolio_contact{
@@ -57,6 +62,54 @@
         }
     }
 }
+
+//portfolio card area
+.port_card_area{
+    width:100%;
+    display:block;
+    gap:2rem;
+}
+.port_card{
+    margin:1rem 0;
+    border-left:1px $light solid;
+    background:$light;
+    display:flex;
+    align-items:center;
+    opacity:75%;
+    padding:2rem;
+    //background:$light;
+    box-sizing:border-box;
+    &:hover{
+        opacity:100%;
+        transition:0.3s;
+        border-left:1px $white solid;
+        animation: pulse-animation 2s infinite;
+
+    }
+    &_text{
+        padding:2rem;
+        overflow:hidden;
+    }
+    & img{
+        width:100%;
+        overflow:hidden;
+    }
+
+
+}
+
+
+
+@media (max-width:1200px) {
+    .port_card{
+        display:grid;
+        grid-template-columns:1fr;
+        & img{
+            width:100%;
+        }
+    }
+}
+
 @media (max-width:768px) {
     .portfolio_page_wrapper{
         width:100%;

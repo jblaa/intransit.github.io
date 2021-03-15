@@ -2,6 +2,18 @@
     $this_page = 'Freelance';
     $page_type = 'landing';
     require('inc/header.php');
+
+    #GET POSTS
+        //create a query for posts
+        $query = 'SELECT * FROM portfolio_posts';
+        //get the results
+        $result = mysqli_query($conn, $query);
+        //fetch data
+        $posts = array_reverse(mysqli_fetch_all($result, MYSQLI_ASSOC));
+        //free the result
+        mysqli_free_result($result);
+        //close connection 
+        mysqli_close($conn);
 ?>
 
 <!--main page content -->
@@ -25,8 +37,8 @@
                 <!--showcase links-->
                 <div id="showcase_link_panel">
                         <!--<a href="#services">[My Services]</a>-->
-                        <a href="#portfolio">[My Portfolio]</a>
-                        <a href="#contact">[Social Media]</a>
+                        <a href="#portfolio">[What's New?]</a>
+                        <a href="#contact">[Hit Me Up]</a>
                         <a href="https://intransit.site" target="_blank">[My Personal Site]</a>
                 </div>
             </div>
@@ -82,7 +94,25 @@
         </div>
     <!--portfolio-->
         <div id="portfolio">
-            <div class="portfolio_card" id="portfolio_3">
+            <div id="portfolio_headline">
+                <h1>[Latest Projects]</h1>
+            </div>
+            <div id="portfolio_inner" class="portfolio_card_area">
+                <?php foreach ($posts as $post) : ?>
+                    <a href="post.php?id=<?php echo $post['id'];?>">
+                        <div class="portfolio_card pulse_on_hover" onmouseover="playBkg(<?php echo $post['id'];?>)" onmouseout="stopBkg(<?php echo $post['id'];?>)">
+                            <img id="image_<?php echo $post['id'];?>" src="img/preview_<?php echo $post['id'];?>.png" alt="where is the image??">
+                            <div class="port_card_text">
+                                <p><?php echo $post['publishdate'];?> by <?php echo $post['projectcreator'];?></p>
+                                <h1 style="word-wrap: break-word;"><?php echo $post['projectname'];?></h1>
+                                <h3><?php echo $post['headline'];?></h3><br>
+                            </div>
+                        </div>
+                    </a>
+                    <?php endforeach; ?>
+            </div>
+
+            <!--<div class="port_card">
                 <h1>Recent</h1><h1>Projects</h1>
                 <div id="arrow_array">
                     <h1 id="chev_0">></h1>
@@ -92,35 +122,11 @@
                     <h1 id="chev_4">></h1>
                     <h1 id="chev_5">></h1>
                 </div>
-            </div>
-            <div class="portfolio_card" id="portfolio_2">
-                <a href="">
-                    <img src="img\portfolio_2.png" alt="">
-                    <p>10 March 2021</p>
-                    <h1>IN_T | Freelance</h1>
-                    <p>My professional dev portfolio.</p>
-                </a>
-            </div>
-            <div class="portfolio_card" id="portfolio_1">
-                <a href="https://intransit.site/portfolio_page/008-fugas/" target="_blank">
-                    <img src="img\portfolio_1.png" alt="">
-                    <p>08 March 2021</p>
-                    <h1>F U Gas</h1>
-                    <p>Crypto trading gamification project.</p>
-                </a>
-            </div>
-            <div class="portfolio_card" id="portfolio_0">
-                <a href="001-in_transit.php">
-                    <img src="img\portfolio_0.png" alt="">
-                    <p>29 December 2020</p>
-                    <h1>IN_TRANSIT</h1>
-                    <p>Personal writing / project porftolio.</p>
-                </a>
-            </div>
+            </div>-->
         </div>
     <!--contact me-->
         <div id="contact">
-            <div id="contact_left" class="contact_area">
+            <div id="contact_left">
                 <div id="contact_container">
                     <h1>Find Me On The Internet</h1>
                     <h3>Have you got cool idea that you want to see brought to life? Do you want to partner with a flexible new developer that will do it pretty cheap as he builds up his portfolio? Contact me via the below social links or the <a href="contact.php">[contact page]</a> on my personal site and I'll get back to you ASAP.</h3>

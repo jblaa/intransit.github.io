@@ -23,9 +23,8 @@
         border-radius:5px;
         cursor:pointer;
         &:hover{
-            background:$dark;
-            transition:0.2s;
-            animation: pulse-animation 2s infinite;
+            background:none;
+            transition:0.3s;
         }
     }
 
@@ -72,6 +71,10 @@
     }
 
 //pulse animation
+    .pulse_on_hover:hover{
+        animation: pulse-animation 2s infinite;
+    }
+
     .pulse {
         animation: pulse-animation 2s infinite;
     }
