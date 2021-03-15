@@ -3,8 +3,6 @@
         require('config/config.php');
         require('config/db.php');
         session_start(); //start the session
-
-    #CHECK CURRENT PAGE 
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +21,6 @@
         <link rel="icon" type="image/png" href="img/logo.png"/>
     <!-- local stylesheets -->
         <link rel="stylesheet" href="css\style.min.css">
-        <!--<link rel="stylesheet" href="css\modal.css">-->
 
 </head>
 <body class="<?php if ($this_page == 'Freelance') {echo 'bandw';}; ?>" id="body">

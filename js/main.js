@@ -1,3 +1,5 @@
+console.log('main.js found');
+
 //TypeWriter() calls the typewriter effect
 // ES6 Class
 class TypeWriter {

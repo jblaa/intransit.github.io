@@ -1,6 +1,9 @@
 <?php
-    #Get DB info
-        require('config/db.php');
+    #this page info and requires
+        $this_page = $post['projectname'];
+        $page_type = 'portfolio';
+        require('inc/header.php');
+        
     #GET POST
         //get id
         $id = mysqli_real_escape_string($conn, $_GET['id']);
@@ -15,9 +18,7 @@
         //close connection 
         mysqli_close($conn);
 
-    $this_page = $post['projectname'];
-    $page_type = 'portfolio';
-    require('inc/header.php');
+
 ?>
 
 <div class="portfolio_page_wrapper">
