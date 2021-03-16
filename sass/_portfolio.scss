@@ -73,10 +73,13 @@
     margin:1rem 0;
     border-left:1px $light solid;
     background:$light;
-    display:flex;
+    display:grid;
+    grid-template-columns:1fr 2fr;
     align-items:center;
     opacity:75%;
     padding:2rem;
+    width:100%;
+    height:auto;
     //background:$light;
     box-sizing:border-box;
     &:hover{
@@ -92,6 +95,7 @@
     }
     & img{
         width:100%;
+        height:auto;
         overflow:hidden;
     }
 

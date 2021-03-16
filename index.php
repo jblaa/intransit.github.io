@@ -129,7 +129,7 @@
             <div id="contact_left">
                 <div id="contact_container">
                     <h1>Find Me On The Internet</h1>
-                    <h3>Have you got cool idea that you want to see brought to life? Do you want to partner with a flexible new developer that will do it pretty cheap as he builds up his portfolio? Contact me via the below social links or the <a href="contact.php">[contact page]</a> on my personal site and I'll get back to you ASAP.</h3>
+                    <h3>Have you got cool idea that you want to see brought to life? Do you want to partner with a flexible new developer that will do it pretty cheap as he builds up his portfolio? Contact me via the below social links or on my <a href="contact.php">[contact page]</a> and I'll get back to you ASAP.</h3>
                     <div id="social_block">
                         <a href="https://gist.github.com/jblaa" target="_blank"><i style="color:#f34f29;" class="social_icon fab fa-github fa-2x"></i></a>
                         <a href="https://www.linkedin.com/in/jovaniezayas/" target="_blank"><i style="color:#0e76a8;" class="social_icon fab fa-linkedin fa-2x"></i></a>
